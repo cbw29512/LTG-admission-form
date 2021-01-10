@@ -98,7 +98,7 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 420px) {
   .labels {
     width: 100%;
     text-align: left;
