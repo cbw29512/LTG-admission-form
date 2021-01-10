@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- added title for browser tag -->
+    <title>LTG Admission Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Added style.css for CSS style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <!-- Title of Form -->
+    <h1 id="title">LTG Admission form</h1>
+    <div id="form-outer">
+      <form id="survey-form">
+        <!-- LTG Logo image -->
+        <img id="ltg-logo"src="/images/LTG.png" alt="LTG Logo"> 
+        <p id="description">Light Tower Guild</p>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <!-- Name field -->
+          <div class="rightTab">
+            <input
+              autofocus
+              type="text"
+              name="name"
+              id="name"
+              class="input-field"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+        <!-- Email field -->
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Email: </label>
+          </div>
+          <div class="rightTab">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-field"
+              required
+              placeholder="Enter your Email"
+            />
+          </div>
+        </div>
+        <!-- Phone number field -->
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="contact">Contact Number: </label>
+          </div>
+
+          <div class="rightTab">
+            <input
+              type="tel"
+              id="phone"
+              name="contact_phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+              value="1"
+              min="1"
+              max="15"
+              class="input-field"
+              placeholder="Format:
+            ex. 000-000-0000"
+            />
+          </div>
+        </div>
+        <!-- question with pull down options-->
+        <div class="rowTab">
+          <div class="labels">
+            <label for="currentPos"
+              >* How far are you on your coding journey?</label
+            >
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="student">Attending School</option>
+              <option value="job">Just completed a program!</option>
+              <option value="learner">Working Full Time</option>
+              <option value="preferNo">Working Part Time</option>
+              <option value="other">Internship</option>
+            </select>
+          </div>
+        </div>
+        <!-- question with pull down options -->
+        <div class="rowTab">
+          <div class="labels">
+            <label for="most-like"
+              >What best describes the benefits you hope to get from this internship:
+            </label>
+          </div>
+          <div class="rightTab">
+            <select id="most-like" name="mostLike" class="dropdown">
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">I enjoy volunteer work!</option>
+              <option value="projects">More experience with developers.</option>
+              <option value="community">Be part of a community.</option>
+              <option value="openSource">What's an internship?</option>
+            </select>
+          </div>
+        </div>
+        <!-- Circle Radio Buttons -->
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userRating"
+              >* Do you have 10 hours a week to put towards volunteer intership
+              work?</label
+            >
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none">
+              <li class="radio">
+                <label
+                  >Yes!<input
+                    name="radio-buttons"
+                    value="1"
+                    type="radio"
+                    class="userRatings"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >No!<input
+                    name="radio-buttons"
+                    value="2"
+                    type="radio"
+                    class="userRatings"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >Tell me more first.<input
+                    name="radio-buttons"
+                    value="3"
+                    type="radio"
+                    class="userRatings"
+                /></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Square radio buttons -->
+        <div class="rowTab">
+          <div class="labels">
+            <label for="preferences"
+              >What positions in Light Tower Guild are you most interested in filling?
+            </label>
+          </div>
+          <div class="rightTab">
+            <ul id="preferences" style="list-style: none">
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="1"
+                    type="checkbox"
+                    class="userRatings"
+                  />Intern</label
+                >
+              </li>
+              <li class="checkbox">
+                <input
+                  name="prefer"
+                  value="2"
+                  type="checkbox"
+                  class="userRatings"
+                />Customer Service
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="3"
+                    type="checkbox"
+                    class="userRatings"
+                  />Social Media Coordinator</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="4"
+                    type="checkbox"
+                    class="userRatings"
+                  />Trello/Scrum Master
+                </label>
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="5"
+                    type="checkbox"
+                    class="userRatings"
+                  />Full Stack Developer</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="6"
+                    type="checkbox"
+                    class="userRatings"
+                  />Project Coordinator</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="7"
+                    type="checkbox"
+                    class="userRatings"
+                  />Web Master</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="8"
+                    type="checkbox"
+                    class="userRatings"
+                  />UI/UX</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="9"
+                    type="checkbox"
+                    class="userRatings"
+                  />Senior Developer</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="10"
+                    type="checkbox"
+                    class="userRatings"
+                  />Co-Founder</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="10"
+                    type="checkbox"
+                    class="userRatings"
+                  />Founder (The One)</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="comments"
+              >Free Style here! Any additional comments, concerns, etc.</label
+            >
+          </div>
+          <!-- Text area  -->
+          <div class="rightTab">
+            <textarea
+              id="comments"
+              class="input-field"
+              style="height: 50px; width: 75%; resize: vertical"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+        <!-- Javascript -->
+    <script src="script.js" async defer></script>
+  </body>
+</html>
