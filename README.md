@@ -2,3 +2,4 @@
 Light Tower Guild Admission form
 Host by Netlify.com
 Alpha release
+(added to form tag: name="contact" method="POST" data-netlify="true")
